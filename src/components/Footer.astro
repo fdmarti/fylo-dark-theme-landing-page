@@ -1,0 +1,32 @@
+---
+import SocialMedia from './Footer/SocialMedia.astro';
+import InfoLocation from './Footer/InfoLocation.astro';
+import ExternalLinks from './Footer/ExternalLinks.astro';
+import Contact from './Footer/Contact.astro';
+---
+
+<footer>
+    <InfoLocation />
+    <Contact />
+    <ExternalLinks />
+    <SocialMedia />
+</footer>
+<style>
+    footer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        background-color: var(--darkBlueFooter);
+        margin-top: 30px;
+        padding: 290px 100px 100px;
+    }
+
+    @media (max-width: 991px) {
+        footer {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 100px 70px;
+            gap: 4rem;
+        }
+    }
+</style>

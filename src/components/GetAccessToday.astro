@@ -1,0 +1,43 @@
+---
+import Form from './Form.astro';
+---
+
+<section class='get-access'>
+    <h3>Get early access today</h3>
+    <p>
+        It only takes a minute to sign up and our free starter tier is extremely
+        generous. If you have any questions, our support team would be happy to
+        help you.
+    </p>
+    <Form />
+</section>
+
+<style>
+    .get-access {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+        color: var(--white);
+        padding: 70px 30px;
+        background-color: var(--darkBlueText);
+        position: relative;
+        top: 200px;
+    }
+
+    h3 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 25px;
+        margin-bottom: 35px;
+    }
+
+    @media (max-width: 991px) {
+        .get-access {
+            top: 50px;
+        }
+    }
+</style>

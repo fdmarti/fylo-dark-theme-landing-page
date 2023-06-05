@@ -1,0 +1,24 @@
+---
+import ExtraInformation from './ExtraInformation.astro';
+---
+
+<section class='contact'>
+    <ExtraInformation
+        text='+1-543-123-4567'
+        imageUrl='icon-phone.svg'
+        alt='icon phone footer'
+    />
+    <ExtraInformation
+        text='example@huddle.com'
+        imageUrl='icon-email.svg'
+        alt='icon email footer'
+    />
+</section>
+<style>
+    .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+</style>

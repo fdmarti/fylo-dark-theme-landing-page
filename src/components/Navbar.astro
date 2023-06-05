@@ -1,0 +1,46 @@
+<nav>
+	<a href='/' class='logo'>
+		<img src='/images/logo.svg' alt="fylo's logo" />
+	</a>
+	<ul class='menu'>
+		<li><a href='#'>Features</a></li>
+		<li><a href='#'>Team</a></li>
+		<li><a href='#'>Sign In</a></li>
+	</ul>
+</nav>
+<style>
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 40px 65px;
+	}
+
+	.menu {
+		display: flex;
+		gap: 5rem;
+	}
+
+	.menu li a {
+		list-style: none;
+		font-weight: 700;
+		color: var(--grey);
+	}
+
+	.menu li a:hover {
+		color: var(--white);
+		text-decoration: underline;
+	}
+
+	@media (max-width: 768px) {
+		nav {
+			padding: 40px 25px;
+			gap: 2rem;
+		}
+
+		.menu {
+			gap: 3rem;
+			white-space: nowrap;
+		}
+	}
+</style>

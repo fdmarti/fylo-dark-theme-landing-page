@@ -1,0 +1,29 @@
+<section class='external-links'>
+    <a href='#'>About Us</a>
+    <a href='#'>Contact Us</a>
+    <a href='#'>Jobs</a>
+    <a href='#'>Terms</a>
+    <a href='#'>Press</a>
+    <a href='#'>Privacy</a>
+    <a href='#'>Blog</a>
+</section>
+<style>
+    .external-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    a {
+        color: var(--white);
+        font-family: var(--fontOpenSans);
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    @media (max-width: 991px) {
+        .external-links {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

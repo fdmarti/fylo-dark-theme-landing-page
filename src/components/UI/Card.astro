@@ -1,0 +1,56 @@
+---
+const { text, profileImage, profileName, profilePosition } = Astro.props;
+---
+
+<div class='card'>
+    <p>{text}</p>
+    <div class='user-info'>
+        <img src=`/images/${profileImage}` alt='profile image fylo' />
+        <section class='user-text-information'>
+            <span class='name'><strong>{profileName}</strong></span>
+            <span class='position'>{profilePosition}</span>
+        </section>
+    </div>
+</div>
+<style>
+    .card {
+        max-width: 400px;
+        background-color: var(--darkBlueTestimonial);
+        padding: 30px;
+        border-radius: 5px;
+        color: var(--white);
+        z-index: 1;
+
+        box-shadow: 0 0 20px -25px var(--darkBlueTestimonial);
+
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .user-info {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .user-info img {
+        max-width: 30px;
+        border-radius: 50px;
+    }
+
+    .user-text-information {
+        display: flex;
+        flex-direction: column;
+    }
+
+    span {
+        font-size: 13px;
+    }
+</style>

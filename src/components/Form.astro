@@ -1,0 +1,40 @@
+---
+import Button from './UI/Button.astro';
+---
+
+<form>
+    <input type='email' id='email' placeholder='example@gmail.com' required />
+    <Button text='Get Started For Free' />
+</form>
+<style>
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+    }
+    input {
+        padding: 20px;
+        width: 450px;
+        border: none;
+        border-radius: 25px;
+        font-size: 16px;
+
+        flex: 0 1 50%;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    @media (max-width: 992px) {
+        form {
+            flex-direction: column;
+        }
+
+        input {
+            width: 100%;
+        }
+    }
+</style>

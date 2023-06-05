@@ -1,0 +1,52 @@
+---
+import Icon from './UI/Icon.astro';
+---
+
+<div class='icon-section'>
+	<Icon
+		urlImg='/images/icon-access-anywhere.svg'
+		altImg='access anywhere icon'
+		title='Access your files, anywhere'
+		text='The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.'
+	/>
+
+	<Icon
+		urlImg='/images/icon-security.svg'
+		altImg='security you can trus icon'
+		title='Security you can trust'
+		text='2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.'
+	/>
+
+	<Icon
+		urlImg='/images/icon-collaboration.svg'
+		altImg='real time collaboration icon'
+		title='Real-time collaboration'
+		text='Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.'
+	/>
+
+	<Icon
+		urlImg='/images/icon-any-file.svg'
+		altImg='store any type of file icon'
+		title='Store any type of file'
+		text="Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared."
+	/>
+</div>
+
+<style>
+	.icon-section {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		padding: 120px 20px;
+		max-width: 1200px;
+		margin: 0 auto;
+
+		gap: 1rem;
+		row-gap: 5rem;
+	}
+
+	@media (max-width: 991px) {
+		.icon-section {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+</style>

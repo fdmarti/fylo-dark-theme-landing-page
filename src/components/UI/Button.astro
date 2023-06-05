@@ -1,0 +1,24 @@
+---
+const { text } = Astro.props;
+---
+
+<button>{text}</button>
+<style>
+	button {
+		background: var(--cyan);
+		background: linear-gradient(90deg, var(--cyan) 0%, var(--blue) 61%);
+		color: var(--white);
+
+		padding: 20px 40px;
+		max-width: 500px;
+		font-size: 18px;
+        font-weight: 700;
+		border-radius: 40px;
+		border: none;
+	}
+
+    button:hover{
+        cursor: pointer;
+        background: var(--cyanHover);
+    }
+</style>
